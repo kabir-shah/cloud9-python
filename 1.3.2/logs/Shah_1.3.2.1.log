@@ -1,0 +1,62 @@
+# IPython log file
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+a = numpy.random.randn(1000)
+a = np.random.randn(1000)
+plt.hist(a)
+#[Out]# (array([   8.,   26.,  102.,  228.,  286.,  190.,  129.,   27.,    2.,    2.]), array([-3.16196121, -2.46458943, -1.76721764, -1.06984585, -0.37247407,
+#[Out]#         0.32489772,  1.02226951,  1.71964129,  2.41701308,  3.11438486,
+#[Out]#         3.81175665]), <a list of 10 Patch objects>)
+plt.savefig("1.3.2/Histogram")
+%logstart -ort 1.3.2/logs/Shah_1.3.2.0.log
+# Kabir Shah 1.3.2 IPython Log
+5 + 3
+#[Out]# 8
+7*2
+#[Out]# 14
+7*2.
+#[Out]# 14.0
+# (7*2) gives an int, while (7*2.) gives a float
+# If one of the arguments to the multiplication is a float, then the result will also be a float. This is to preserve any extra precision given in the arguments in the result.
+7/2
+#[Out]# 3
+7/2.
+#[Out]# 3.5
+# 7b: int/int returns an int, while int/float returns a float. This is also to have the precision of the arguments when they are floating point, and preserve it in the result when they are floating point. When they are both ints, the result will be given to the same precision as an integer.
+# 8. Assignment
+student_age = 16 # note: I'm 14 but the directions say 16 ¯\_(ツ)_/¯
+# 9. Assignment
+23 ** 43
+#[Out]# 35834136918934220777541995677272642015423987712183913488967L
+# 23 ^ 43 = 35834136918934220777541995677272642015423987712183913488967
+%run 1.3.2/Shah_1.3.2.py
+# 11: Editing many lines in the code editor first before running allows for previous statements to be edited and configured as needed. In contrast, using the Python shell is helpful for the instant feedback and for prototyping simple things. It is not useful for larger programs that need to be edited as developed.
+# 12: Scratch and App Inventor used a hierarchical structure and allowed the user to drag other code blocks inside of if/else chunks.
+# 13: Using a docstring for a function allows you to document what a function does to refer back to later if forgotten. Also, it allows other readers of your code and team members to see what a specific function does, what parameters it takes, and what it returns.
+# 14: Destroying local variables once a block is done executing allows for unused memory to be reused instead of taking up more space. It also allows for variable names to be small and concise, because they do not have to be unique. This is because variables will be destroyed and their names will become available for use again. Instead of cluttering the amount of variables available for use, they will be destroyed when they aren't needed anymore.
+%logstop
+# test
+# Wed, 05 Dec 2018 18:28:28
+# 15: A compiler would wait for me to say *all* of my sentences before translating all of them into another language to be communicated to the business partner.
+# Wed, 05 Dec 2018 18:31:27
+%run 1.3.2/Shah_1.3.2.py
+# Wed, 05 Dec 2018 18:31:37
+hyp(3, 4) # Hypotenuse test
+#[Out]# 5.0
+# Thu, 06 Dec 2018 17:05:35
+mean(3, 4, 7) # 17b: Mean test
+# Thu, 06 Dec 2018 17:05:42
+%run 1.3.2/Shah_1.3.2.py
+# Thu, 06 Dec 2018 17:05:44
+mean(3, 4, 7) # 17b: Mean test
+#[Out]# 4.666666666666667
+# Thu, 06 Dec 2018 17:08:03
+%run 1.3.2/Shah_1.3.2.py
+# Thu, 06 Dec 2018 17:08:20
+perimeter(3, 4) # 17c: Perimeter test
+#[Out]# 14.0
+# Thu, 06 Dec 2018 17:09:41
+%logstop

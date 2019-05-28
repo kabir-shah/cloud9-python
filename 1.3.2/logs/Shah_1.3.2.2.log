@@ -1,0 +1,78 @@
+# IPython log file
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+a = numpy.random.randn(1000)
+a = np.random.randn(1000)
+plt.hist(a)
+#[Out]# (array([   8.,   26.,  102.,  228.,  286.,  190.,  129.,   27.,    2.,    2.]), array([-3.16196121, -2.46458943, -1.76721764, -1.06984585, -0.37247407,
+#[Out]#         0.32489772,  1.02226951,  1.71964129,  2.41701308,  3.11438486,
+#[Out]#         3.81175665]), <a list of 10 Patch objects>)
+plt.savefig("1.3.2/Histogram")
+%logstart -ort 1.3.2/logs/Shah_1.3.2.0.log
+# Kabir Shah 1.3.2 IPython Log
+5 + 3
+#[Out]# 8
+7*2
+#[Out]# 14
+7*2.
+#[Out]# 14.0
+# (7*2) gives an int, while (7*2.) gives a float
+# If one of the arguments to the multiplication is a float, then the result will also be a float. This is to preserve any extra precision given in the arguments in the result.
+7/2
+#[Out]# 3
+7/2.
+#[Out]# 3.5
+# 7b: int/int returns an int, while int/float returns a float. This is also to have the precision of the arguments when they are floating point, and preserve it in the result when they are floating point. When they are both ints, the result will be given to the same precision as an integer.
+# 8. Assignment
+student_age = 16 # note: I'm 14 but the directions say 16 ¯\_(ツ)_/¯
+# 9. Assignment
+23 ** 43
+#[Out]# 35834136918934220777541995677272642015423987712183913488967L
+# 23 ^ 43 = 35834136918934220777541995677272642015423987712183913488967
+%run 1.3.2/Shah_1.3.2.py
+# 11: Editing many lines in the code editor first before running allows for previous statements to be edited and configured as needed. In contrast, using the Python shell is helpful for the instant feedback and for prototyping simple things. It is not useful for larger programs that need to be edited as developed.
+# 12: Scratch and App Inventor used a hierarchical structure and allowed the user to drag other code blocks inside of if/else chunks.
+# 13: Using a docstring for a function allows you to document what a function does to refer back to later if forgotten. Also, it allows other readers of your code and team members to see what a specific function does, what parameters it takes, and what it returns.
+# 14: Destroying local variables once a block is done executing allows for unused memory to be reused instead of taking up more space. It also allows for variable names to be small and concise, because they do not have to be unique. This is because variables will be destroyed and their names will become available for use again. Instead of cluttering the amount of variables available for use, they will be destroyed when they aren't needed anymore.
+%logstop
+# test
+%logstart -ort 1.3.2/logs/Shah_1.3.2.1.log
+# 15: A compiler would wait for me to say *all* of my sentences before translating all of them into another language to be communicated to the business partner.
+%run 1.3.2/Shah_1.3.2.py
+hyp(3, 4) # Hypotenuse test
+#[Out]# 5.0
+mean(3, 4, 7) # 17b: Mean test
+%run 1.3.2/Shah_1.3.2.py
+mean(3, 4, 7) # 17b: Mean test
+#[Out]# 4.666666666666667
+%run 1.3.2/Shah_1.3.2.py
+perimeter(3, 4) # 17c: Perimeter test
+#[Out]# 14.0
+%logstop
+# Thu, 06 Dec 2018 17:10:05
+# Conclusion Question #1
+# Thu, 06 Dec 2018 17:13:46
+# I would like to have checking homework answers be automated by a program that uses artificial intelligence to identify hand-written problems on paper and display the answers along with the problem detected. I think Python would be a good choice because of its' ease of use and wide selection of machine learning frameworks to help automate this problem. With this program, instead of having to manually type a problem or look it up in a textbook -- both time-consuming processes -- I would be able to scan a paper once and receive all of the answers for reference.
+# Thu, 06 Dec 2018 17:14:11
+# Conclusion Question #2
+# Thu, 06 Dec 2018 17:17:43
+# The native data types mentioned in this lesson were "int", "float", "boolean", and "string". An "int" is an integer such as 3 or -3. Operations with integers result in other integers, even when more precision may be possible. A "float" is a real number with a certain precision limit such as 1.33 or -3.421142353234. Operations with floats or any integer and float result in other floats, and have more precision when necessary.
+# Thu, 06 Dec 2018 17:18:01
+# Conclusion Question #3
+# Thu, 06 Dec 2018 17:23:00
+# The command line of an interpretive iPython session is an environment where each line of Python is input and ran one by one. Previous state such as variables, functions, or modules are available for later lines as they are defined. Previous lines cannot be edited -- instead of this, previous state is changed by redefining older variables. On the other hand, a code editor where a file with code is edited, any line can be edited at any time. However, instant output is not given when each line is entered, and the whole file must be ran manually. The interactive shell is useful for quick prototyping and rapid feedback, but does not preserve the code well and cannot be edited if mistakes were made. A file is useful for larger programs that are meant to be stable and edited later.
+# Thu, 06 Dec 2018 17:23:10
+# Conclusion Question #4
+# Thu, 06 Dec 2018 17:25:42
+# Putting code inside of a function definition is advantageous because code can be easily reused and extended instead of repeated. For example, if an operation is repeated more than once throughout a codebase, the logic must be repeated at every use and results in less concise and less readable code. If the logic ever needs to be changed, it will need to be edited at every use. On the other hand, putting it in a function will allow for concise usage and individual documentation for the function with a docstring to help make the code easier to understand.
+# Thu, 06 Dec 2018 17:25:53
+# Conclusion Question #5
+# Thu, 06 Dec 2018 17:27:03
+%run 1.3.2/Shah_1.3.2.py
+# Thu, 06 Dec 2018 17:28:46
+# The results were 23.0, 34.5, 5.0, 4.66, and 14.0. These were the correct answers according to the formulas, and this may be the last conclusion question to verify that the assignment was done correctly with the correct function definitions.
+# Thu, 06 Dec 2018 17:28:50
+%logstop
